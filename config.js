@@ -1,45 +1,92 @@
-const config = {
-	size: 5,
+const liska = {
+	size: 4,
 	dict: [
-		"\"egypťani\"",
-		"astrid nestíhá",
-		"libovolný org random pobíhá s vysílačkou v ruce",
-		"potlesk",
-		"v úloze je chyba",
-		"rozbije se flaška",
-		"vyhraje tým z jiného státu",
-		"člověku na pódiu není rozumět ",
-		"kdokoliv křičí na celou halu bingo",
-		"dupkala v saku",
-		"zbyde 14 tisíc sýrových mlsounů",
-		"libovolný tým vzdal soutěž a jenom sedí u stolu",
-		"účastníci si stěžují, že je merch moc drahý",
-		"kdokoliv nadává na vzhled merche",
-		"martin vaněk říká prázdná slova ",
-		"je prezentace \"co je to FYKOS\"",
-		"soutěžící se hádá o řešení s organizátorem ",
-		"tým uvede výsledek alespoň o 20 řádů jinde",
-		"registrace je chaotická",
-		"neorganizátor má fyziklání triko",
-		"organizátoři nevědí co mají dělat",
-		"libovolný člověk má FYKOS merch",
-		"libovolný člověk má výfuk merch",
-		"libovolný člověk má merch jiného semináře",
-		"libovolný tým má matching trika",
-		"týmy zdrhají ještě před vyhlášením",
-		"příšerná angličtina",
-		"organizátoři během opravování vytváří memes",
-		"někdo něco vykřikne při přečtení prvních úloh",
-		"stůl s bagetami bez lidí",
-		"barikády z učebnic na stole",
-		"dupkala říká vtipy a nikdo se nesměje",
-		"agresivní propagace merche",
-		"někdo běží k opravovatelům jak o život a pošlou ho zpátky",
-		"fronty lidí co náhodně tipují na konci soutěže",
-		"úloha o náhodném organizátorovi, co chápou jen organizátoři",
-		"\"někdo něco ukradl, prosíme o navrácení\"",
-		"tabulky z minulého století na stole",
-		"fronta na záchodech",
-		"tým na vyhlašované pozici není přítomný"
+		"\"Jáj\"",
+		"\"Jsem veselý\"",
+		"\"A z toho jsme smutní\"",
+		"\"To je smutný příběh\"",
+		"\"Ve vašem světě je všechno v pořádku\"",
+		"\"Ve vašem světě není všechno v pořádku\"",
+		"\"Pro mě ten lehčí a pěkný příklad\"",
+		"\"To bude teprve bžunda\"",
+		"\"Tak to je príma\"",
+		"\"No to si nepomůžete\"",
+		"\"A jéje\"",
+		"\"A už jsme veselí\"",
+		"\"Máme dobrovolníka?\"",
+		"Liška mluví slovensky",
+		"\"Můžete si to smazat\"",
+		"\"Počkejte, hned vám zadám příklad\"",
+		"Kdokoliv křičí \"BINGO!\""
 	]
-}
+};
+
+const vondra = {
+	size: 4,
+	dict: [
+		"\"Jo lásko?\"",
+		"\"Jo zlato?\"",
+		"\"Cajk\"",
+		"\"Lets go\"",
+		"Jakákoli sexuální narážka",
+		"Vondra se zoufalým výrazem opře hlavu o tabuli",
+		"\"Kdo už alespoň slyšel o <geometrický termín>?\"",
+		"Kdokoliv rýsuje příliš tlustou čáru",
+		"Kdokoliv nemá pravítko",
+		"Kdokoliv nemá kružítko",
+		"Vondra vyjadřuje nesouhlas s črtáním do tabletu",
+		"\"Hej\"",
+		"\"Tak a znova, lépe, radostněji!\"",
+		"\"A proč?\"",
+		"Vondra si donese kafe z automatu",
+		"Kdokoliv křičí \"BINGO!\""
+	]
+};
+
+const drimalova = {
+	size: 4,
+	dict: [
+		"\"Divný, co?\"",
+		"\"A co jako?\"",
+		"\"Bolí, co?\"",
+		"\"Motivační příklad\"",
+		"\"Ono si to sedne\"",
+		"\"Vezměte si žeton\"",
+		"\"To cítíte\"",
+		"\"Tady je kokínko\"",
+		"Dřímalová vypráví o dětech",
+		"\"Péťo, řekni čau.\"",
+		"Kdokoliv sprintuje k tabuli zapsat si příklad",
+		"Libovolný příklad se nestihne",
+		"Na začátku cvika víme, že některý příklad nestihneme",
+		"\"Zadřel\"",
+		"\"Sledujete to?\"",
+		"\"Máte to v Teamsech\"",
+		"Kdokoliv na člověka před tabulí: Napiš mě tam",
+		"\"Vemte si lodičky\"",
+		"\"Zelená dobrý, žlutá si sedne, červená vůbec\"",
+		"\"Nechte mi tu váš dojem ze cvičení\"",
+		"\"Ono to začne dávat smysl\"",
+		"Kdokoliv křičí \"BINGO!\""
+	]
+};
+
+const bingotables = [
+	{
+		name: "Liška",
+		config: liska,
+		checkname: "liska"
+	},
+	{
+		name: "Vondra",
+		config: vondra,
+		checkname: "vondra"
+	},
+	{
+		name: "Dřímalová",
+		config: drimalova,
+		checkname: "drimalova"
+	}
+];
+
+

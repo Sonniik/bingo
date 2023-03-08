@@ -9,13 +9,13 @@ const setToday = (today) => {
 	document.getElementById("date").innerText = date_text;
 };
 
-const setLocalStorage = () => {
+const setLocalStorage = (checkname) => {
 	const checked = Array(16).fill(false);
-	localStorage.removeItem("checked"); //removing old checked array
-	localStorage.setItem("checked", JSON.stringify(checked)); //adding new checked array
+		localStorage.removeItem(checkname); //removing old checked array
+		localStorage.setItem(checkname, JSON.stringify(checked)); //adding new checked array
 };
 
-const getCookies = (today) => {
+const getCookies = (today,checkname) => {
 	// random UUID seed stored in a cookie, that expires on midnight
 	let device_unique_seed = "";
 
@@ -29,7 +29,6 @@ const getCookies = (today) => {
 
 	// if no cookie is found (none created / expired), create one
 	if (!device_unique_seed) {
-		setLocalStorage();
 
 		device_unique_seed = crypto.randomUUID();
 		let midnight = new Date(
@@ -47,13 +46,14 @@ const getCookies = (today) => {
 			expires +
 			"; path=/";
 	}
+
 	//parse array from localStorage
-	const checked = JSON.parse(localStorage.getItem("checked"));
+	const checked = JSON.parse(localStorage.getItem(checkname));
 	
 	return [device_unique_seed, checked];
 };
 
-const shuffleArray = (device_unique_seed) => {
+const shuffleArray = (device_unique_seed,config) => {
 	//shuffle
 	let random_gen = new Math.seedrandom(device_unique_seed);
 	const dict = config.dict;
@@ -128,7 +128,7 @@ const onClickCell = (cell, index, checked) => {
 	cell.onclick = function () {
 		checked[index] = !checked[index];
 		applyCheckedStyle(this, checked[index]);
-		localStorage.setItem("checked", JSON.stringify(checked)); //set new value for squares
+		localStorage.setItem(checkname, JSON.stringify(checked)); //set new value for squares
 		checkWin(index, checked);
 	};
 };
@@ -142,6 +142,9 @@ const mainLoop = () => {
 	let today = new Date();
 	setToday(today);
 
+		// generate or get ID for device
+		let [device_unique_seed, checked] = getCookies(today,checkname);
+
 
 	// check valid size config
 	if (config.size**2 > config.dict.length) {
@@ -150,11 +153,8 @@ const mainLoop = () => {
 		return;
 	}
 
-	// generate or get ID for device
-	let [device_unique_seed, checked] = getCookies(today);
-
-	// shuffle dict array for uniq bingo
-	shuffleArray(device_unique_seed);
+	//clear board
+	board.textContent = '';
 
 	// generate squares to be filled
 	for (let i = 0; i < config.size**2; i++)
@@ -177,4 +177,56 @@ const mainLoop = () => {
 	});
 };
 
-mainLoop();
+const onClickButton = (cell, index) => {
+	// set date
+	let today = new Date();
+	setToday(today);
+	cell.onclick = function () {
+		 config = bingotables[index].config;
+		 checkname = bingotables[index].checkname;
+		 mainLoop();
+	};
+};
+
+const generateHeader = () => {
+
+	let config = {};
+	let checkname = "";
+
+	// set date
+	let today = new Date();
+	setToday(today);
+
+	// if new cookie needs to be generated, clear local storage
+	if(!document.cookie) {
+		localStorage.clear();
+	};
+
+	// prepare buttons
+	for (let j = 0; j < bingotables.length; j++)
+		buttonboard.insertAdjacentHTML("beforeend", '<div class="button"><div></div></div>');
+
+	buttonboard.style.setProperty("grid-template-rows", "repeat("+1+", 1fr)");
+	buttonboard.style.setProperty("grid-template-columns", "repeat("+bingotables.length+", 1fr)");
+
+	// get buttons
+	let buttons = document.getElementsByClassName("button");
+	buttons = [...buttons];
+
+	// fill text and attach onClick
+	buttons.forEach((cell) => {
+		let index = buttons.indexOf(cell);
+		cell.children[0].innerText = bingotables[index].name;
+		checkname = bingotables[index].checkname;
+		config = bingotables[index].config;
+		// generate or get ID for device
+		let [device_unique_seed, checked] = getCookies(today,checkname);
+		// shuffle dict array for uniq bingo
+		shuffleArray(device_unique_seed,config);
+		if(!JSON.parse(localStorage.getItem(checkname)))
+			setLocalStorage(bingotables[index].checkname);
+		onClickButton(cell, index);
+	});
+};
+
+generateHeader();
