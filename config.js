@@ -17,6 +17,7 @@ const liska = {
 		"Liška mluví slovensky",
 		"\"Můžete si to smazat\"",
 		"\"Počkejte, hned vám zadám příklad\"",
+		"\"Váš integrál je tento\"",
 		"Kdokoliv křičí \"BINGO!\""
 	]
 };
