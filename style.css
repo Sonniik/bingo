@@ -85,13 +85,16 @@ main {
 .button {
 	max-width: 12em;
 	min-width: 5.5em;
-	min-height: 3em;
+	min-height: 2.75em;
 	aspect-ratio: 3/1;
+	margin: 3px;
+	border-color: var(--color-text);
 	color: var(--color-primary);
 	background-color: var(--color-text);
-	margin: 3px;
 	transition: opacity 0.1s;
 	border-radius: 3px;
+	border-width: 3px;
+	border-style: solid;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -102,6 +105,10 @@ main {
 
 .button:hover {
 	cursor: pointer;
+}
+
+.button.selected {
+    box-shadow:0px 0px 0px 2px var(--color-primary) inset;
 }
 
 #confetti-canvas {

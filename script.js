@@ -177,13 +177,23 @@ const mainLoop = () => {
 	});
 };
 
-const onClickButton = (cell, index) => {
+const applySelectedStyle = (cell,buttons) => {
+	buttons.forEach((button) => {
+		if(button.classList.contains("selected")) {
+		button.classList.remove("selected");
+		}
+	});
+	cell.classList.add("selected");
+}
+
+const onClickButton = (cell, index, buttons) => {
 	// set date
 	let today = new Date();
 	setToday(today);
 	cell.onclick = function () {
 		 config = bingotables[index].config;
 		 checkname = bingotables[index].checkname;
+		 applySelectedStyle(cell,buttons)
 		 mainLoop();
 	};
 };
@@ -225,7 +235,7 @@ const generateHeader = () => {
 		shuffleArray(device_unique_seed,config);
 		if(!JSON.parse(localStorage.getItem(checkname)))
 			setLocalStorage(bingotables[index].checkname);
-		onClickButton(cell, index);
+		onClickButton(cell, index, buttons);
 	});
 };
 
