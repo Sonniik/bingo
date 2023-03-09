@@ -18,6 +18,18 @@ const liska = {
 		"\"Můžete si to smazat\"",
 		"\"Počkejte, hned vám zadám příklad\"",
 		"\"Váš integrál je tento\"",
+		"\"Někoho vyberem\"",
+		"\"A budem spokojení\"",
+		"\"Myšlenka je jasná\"",
+		"\"Všechno oukej?\"",
+		"\"Nikdo nic neříká\"",
+		"\"To je báječné\"",
+		"\"To taky můžeme, ale...\"",
+		"\"To už jsme tu měli\"",
+		"\"Život není fér\"",
+		"\"Všichni jsme v pohodě\"",
+		"\"Váš příklad je tento\"",
+		"\"Ve skutečnosti je to jednoduché\"",
 		"Kdokoliv křičí \"BINGO!\""
 	]
 };
