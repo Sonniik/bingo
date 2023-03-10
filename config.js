@@ -80,6 +80,15 @@ const drimalova = {
 		"\"Zelená dobrý, žlutá si sedne, červená vůbec\"",
 		"\"Nechte mi tu váš dojem ze cvičení\"",
 		"\"Ono to začne dávat smysl\"",
+		"\"Nějak to zařiďte tak, aby...\"",
+		"\"Takhle se to dělá\"",
+		"\"O tom si popovídáte s Janyškou\"",
+		"\"Přejedu vám to zvýrazňovačem\"",
+		"\"Není, protože například...\"",
+		"\"Takhle se to dělá\"",
+		"\"Já si to označím třeba <barvou>\"",
+		"\"To asi nestihneme\"",
+		"\"Dá se to napsat hustě\"",
 		"Kdokoliv křičí \"BINGO!\""
 	]
 };
