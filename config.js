@@ -30,6 +30,7 @@ const liska = {
 		"\"Všichni jsme v pohodě\"",
 		"\"Váš příklad je tento\"",
 		"\"Ve skutečnosti je to jednoduché\"",
+		"\"Tohle je klasický zkouškový příklad\"",
 		"Kdokoliv křičí \"BINGO!\""
 	]
 };
