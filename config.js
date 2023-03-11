@@ -14,7 +14,6 @@ const liska = {
 		"\"A jéje\"",
 		"\"A už jsme veselí\"",
 		"\"Máme dobrovolníka?\"",
-		"Liška mluví slovensky",
 		"\"Můžete si to smazat\"",
 		"\"Počkejte, hned vám zadám příklad\"",
 		"\"Váš integrál je tento\"",
@@ -86,10 +85,11 @@ const drimalova = {
 		"\"O tom si popovídáte s Janyškou\"",
 		"\"Přejedu vám to zvýrazňovačem\"",
 		"\"Není, protože například...\"",
-		"\"Takhle se to dělá\"",
+		"\"Takhle se to dělá!\"",
 		"\"Já si to označím třeba <barvou>\"",
 		"\"To asi nestihneme\"",
 		"\"Dá se to napsat hustě\"",
+		"Dřímalová mluví o svém psovi",
 		"Kdokoliv křičí \"BINGO!\""
 	]
 };
