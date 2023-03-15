@@ -52,6 +52,19 @@ const vondra = {
 		"\"Tak a znova, lépe, radostněji!\"",
 		"\"A proč?\"",
 		"Vondra si donese kafe z automatu",
+		"Vondra si donese vlastní hrnek",
+		"Vondra použije více než 4 barvy",
+		"Vondrovi došly barvy",
+		"\"To se to blbě rýsuje, bez kružítka...\"",
+		"\"body dotyku\"",
+		"\"... zabodnete kružítko...\"",
+		"\"Vyšlo?\"",
+		"Vondra při trapném tichu čeká na odpověď",
+		"Vondra si brousí kružítko",
+		"Kdokoliv rýsuje pastelkou",
+		"Kdokoliv rýsuje propiskou",
+		"Kdokoliv dělá náčrt v nevhodném pořadí",
+		"\"Co o tomto <útvar> víte?\"",
 		"Kdokoliv křičí \"BINGO!\""
 	]
 };
