@@ -65,6 +65,16 @@ const vondra = {
 		"Kdokoliv rýsuje propiskou",
 		"Kdokoliv dělá náčrt v nevhodném pořadí",
 		"\"Co o tomto <útvar> víte?\"",
+		"Vondra mluví sprostě",
+		"Vondra se podivně směje",
+		"Vondra vydá divný zvuk",
+		"\"Nápady?\"",
+		"\"Povídejte, přehánějte\"",
+		"\"Komentář:\"",
+		"\"Zadejte si ...\"",
+		"\"Máte?\"",
+		"\"Oukej\"",
+		"Vondra kohokoliv osloví zdrobnělinou",
 		"Kdokoliv křičí \"BINGO!\""
 	]
 };
