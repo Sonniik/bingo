@@ -106,6 +106,7 @@ const drimalova = {
 		"\"Nějak to zařiďte tak, aby...\"",
 		"\"Takhle se to dělá\"",
 		"\"O tom si popovídáte s Janyškou\"",
+		"\"O tom si popovídáte u zkoušky\"",
 		"\"Přejedu vám to zvýrazňovačem\"",
 		"\"Není, protože například...\"",
 		"\"Takhle se to dělá!\"",
