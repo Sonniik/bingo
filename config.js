@@ -3,15 +3,12 @@ const liska = {
 	dict: [
 		"\"Jáj\"",
 		"\"Jsem veselý\"",
-		"\"A z toho jsme smutní\"",
-		"\"To je smutný příběh\"",
-		"\"Ve vašem světě je všechno v pořádku\"",
-		"\"Ve vašem světě není všechno v pořádku\"",
+		"\"A z toho (ne)jsme smutní\"",
+		"\"Smutný příběh\"",
 		"\"Pro mě ten lehčí a pěkný příklad\"",
 		"\"To bude teprve bžunda\"",
 		"\"Tak to je príma\"",
 		"\"No to si nepomůžete\"",
-		"\"A jéje\"",
 		"\"A už jsme veselí\"",
 		"\"Máme dobrovolníka?\"",
 		"\"Můžete si to smazat\"",
@@ -30,6 +27,8 @@ const liska = {
 		"\"Váš příklad je tento\"",
 		"\"Ve skutečnosti je to jednoduché\"",
 		"\"Tohle je klasický zkouškový příklad\"",
+		"\"Čili\"",
+		"\"Krásná práce\"",
 		"Kdokoliv křičí \"BINGO!\""
 	]
 };
@@ -74,6 +73,7 @@ const vondra = {
 		"\"Zadejte si ...\"",
 		"\"Máte?\"",
 		"\"Oukej\"",
+		"\"Čili\"",
 		"Vondra kohokoliv osloví zdrobnělinou",
 		"Kdokoliv křičí \"BINGO!\""
 	]
