@@ -75,6 +75,10 @@ const vondra = {
 		"\"Oukej\"",
 		"\"Čili\"",
 		"Vondra kohokoliv osloví zdrobnělinou",
+		"Vondra si rozmyslí opření hlavou o tabuli",
+		"Vondra použije 4 a více barev",
+		"Vondra si nedonese nápoj",
+		"Nepadla žádná sexuální narážka",
 		"Kdokoliv křičí \"BINGO!\""
 	]
 };
