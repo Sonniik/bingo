@@ -171,7 +171,9 @@ const mainLoop = () => {
 	// fill text and attach onClick
 	squares.forEach((cell) => {
 		let index = squares.indexOf(cell);
-		cell.children[0].innerText = config.dict[index];
+		let random_select = new Math.seedrandom(device_unique_seed.slice(0, 2)+index);
+		let selected = random_select.quick() * config.dict[index].length
+		cell.children[0].innerText = config.dict[index][Math.floor(selected)];
 		applyCheckedStyle(cell, checked[index]);
 		onClickCell(cell, index, checked);
 	});
